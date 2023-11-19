@@ -15,7 +15,7 @@ function NavBar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container">
         <Link className="navbar-brand" href="/">
-          Navbar
+          Issues😑
         </Link>
         <button
           className="navbar-toggler"
@@ -34,7 +34,7 @@ function NavBar() {
               <li key={tab.route} className="nav-item">
                 <Link
                   prefetch={false}
-                  className={`nav-link ${pathname === tab.route ? 'active' : ''}`}
+                  className={`nav-link ${pathname === tab.route && 'active'}`}
                   aria-current="page"
                   href={tab.route}
                 >
